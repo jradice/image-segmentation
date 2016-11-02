@@ -1,5 +1,4 @@
-# assignment_5
-Expectation Maximization - Assignment 5 - CS6601
+# Assignment 5 - Expectation Maximization
 
 # Setup
 Clone this repository recursively:
