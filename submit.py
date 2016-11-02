@@ -55,7 +55,7 @@ def display_assignment_5_output(submission):
 
 def display_game(submission):
   while not submission.poll():
-    time.sleep(3.0)
+    time.sleep(5.0)
 
   if submission.feedback():
     sys.stdout.write(submission.feedback())
