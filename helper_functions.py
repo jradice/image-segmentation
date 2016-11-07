@@ -96,7 +96,7 @@ def unflatten_image_matrix(image_matrix, width):
     """
     heightWidth = image_matrix.shape[0]
     height = int(heightWidth / width)
-    if(len(image_matrix.shape) > 1):
+    if(len(image_matrix.shape) > 1 and image_matrix.shape[-1] != 1):
         depth = image_matrix.shape[-1]
         unflattened_values = np.zeros([height, width, depth])
         for i in range(height):
