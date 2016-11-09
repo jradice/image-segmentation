@@ -48,7 +48,11 @@ Finally, commit the new updates to your branch and continue developing:
 `git commit -am "<funny message vilifying Bonnie>"`
 
 # Submit your code
-We will add these details once Bonnie is ready to accept your completed files and store them as your final submission
+Bonnie will be made active as soon as we make an announcement on Piazza. - around 11 am, 9th November 2016
+
+To submit your code and have it evaluated for a grade, use `python submit.py assignment_5`.  The last submission before the deadline will be used to determine your grade.
+ 
+A friendly reminder: please ensure that your submission is in `mixture_models.py`. The script described in the following section automatically sends that file to the servers for processing.
 
 # Vagrant
 
