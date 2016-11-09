@@ -35,10 +35,6 @@ def image_to_matrix(image_file, grays=False):
             for c in range(width):
                 new_img[r,c] = img[r,c,0]
         img = new_img
-    # clean up zeros
-    if(len(img.shape) == 2):
-        zeros = np.where(img == 0)[0]
-        img[zeros] += 1e-7
     return img
 
 def matrix_to_image(image_matrix, image_file):

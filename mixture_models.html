@@ -263,10 +263,6 @@ $$component_{x} = argmax_{i}(m_{i}N_i(x|\mu_{i},\sigma_{i}^{2})$$<p>Then we will
             <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">width</span><span class="p">):</span>
                 <span class="n">new_img</span><span class="p">[</span><span class="n">r</span><span class="p">,</span><span class="n">c</span><span class="p">]</span> <span class="o">=</span> <span class="n">img</span><span class="p">[</span><span class="n">r</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
         <span class="n">img</span> <span class="o">=</span> <span class="n">new_img</span>
-    <span class="c1"># clean up zeros</span>
-    <span class="k">if</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">img</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">):</span>
-        <span class="n">zeros</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">img</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">img</span><span class="p">[</span><span class="n">zeros</span><span class="p">]</span> <span class="o">+=</span> <span class="mf">1e-7</span>
     <span class="k">return</span> <span class="n">img</span>
 
 <span class="k">def</span> <span class="nf">matrix_to_image</span><span class="p">(</span><span class="n">image_matrix</span><span class="p">,</span> <span class="n">image_file</span><span class="p">):</span>
