@@ -1,0 +1,42 @@
+{
+    "total_points_available": 100,
+    "tests": [
+        {
+            "output": {
+                "points_available": 20,
+                "points_awarded": 12.5,
+                "autograder_comments": "Part 4a results.\nCalculated BIC matches the expected BIC of 733451.\nPart 4b results.\nMin-BIC model predicted number of components 4 doesn't match the expected number.\nNumber of components for max-likelihood model matches the expected number.\n12.50 points.\n"
+            },
+            "traceback": "Traceback (most recent call last):\n  File \"/home/vmuser_jbilsoxu/AIResult.py\", line 26, in func_wrapper\n    ans = func(self)\n  File \"run.py\", line 61, in test_bic\n    self.assertTrue(test_flag, \"Part 4: BIC test\")\nAssertionError: Part 4: BIC test\n",
+            "description": "Test the BIC implementation"
+        },
+        {
+            "output": {
+                "points_available": 20,
+                "points_awarded": 20.0,
+                "autograder_comments": "Part 3a results.\nImproved initialization achieved a likelihood at least 1000.00 greater than original likelihood.\nPart 3b results.\nDifferent convergence condition resulted in a likelihood that was at least 200.00 different from the original model's likelihood.\n20.00 points."
+            },
+            "traceback": "",
+            "description": "Test the GMM changes (improved) implementation"
+        },
+        {
+            "output": {
+                "points_available": 40,
+                "points_awarded": 40,
+                "autograder_comments": "Part 2 results.\nCalculated probability for value 0.8157  matches expected probability -1.0682.\nCalculated pre-training likelihood is -366668.1339 and matches expected likelihood.\nPost-train likelihood is -78263.5520  and at least 1000.0000 greater than pre-train  likelihood -366668.1339.\nPost-train likelihood is -78263.5520  and at least 1000.0000 greater than baseline likelihood -366668.1400.\nPost-segment image has 3 components as expected.\nBest segmentation has a likelihood at least 10000.00 greater than reference segmentation.\n40.00 points."
+            },
+            "traceback": "",
+            "description": "Test the GMM (train, best_segment) implementation"
+        },
+        {
+            "output": {
+                "points_available": 20,
+                "points_awarded": 20.0,
+                "autograder_comments": "Part 1 results.\nClustering for 2 produced a realistic image segmentation. Image difference: 0. Points earned: 4\nClustering for 3 produced a realistic image segmentation. Image difference: 0. Points earned: 4\nClustering for 4 produced a realistic image segmentation. Image difference: 0. Points earned: 4\nClustering for 5 produced a realistic image segmentation. Image difference: 0. Points earned: 4\nClustering for 6 produced a realistic image segmentation. Image difference: 0. Points earned: 4\nTotal points earned in this part: 20.00 points."
+            },
+            "traceback": "",
+            "description": "Test the k-Means implementation"
+        }
+    ],
+    "total_points_awarded": 92.5
+}
